@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProgramacionOrientadaAObjetos
 {
-    public class Squirtle : Polemon
+    public class Coalossal : Polemon
     {
-
-        public Squirtle() : base()
+        public Coalossal() :base()
         {
-            pokemonName = "Squirtle";    //
-            pokemonType = "Agua";
-            healthPoints = 44;
+            pokemonName = "Coalossal";
+            pokemonType = "Roca";
+            healthPoints = 110;
         }
-        
-
     }
 }

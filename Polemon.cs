@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace ProgramacionOrientadaAObjetos
 {
-    internal class Polemon      //pokemon
+    public class Polemon      //pokemon
     {
         //variables publicas que compartiran todos los polemons
         public string pokemonName;
 
-        public string pokemonType;
+        protected string pokemonType;    //Variables protegidas, solo accesibles para las herencias, no para todo el mundo, por eso son accesibles en el script main pero si en el de squirtle
 
         public int healthPoints;
+
+
+        public Polemon()
+        {
+
+        }
 
         public Polemon(string pokemonName, string pokemonType, int healthPoints)        //Constructor con tres argumentos
         {
@@ -23,12 +29,12 @@ namespace ProgramacionOrientadaAObjetos
 
             this.healthPoints = healthPoints;
 
-            PokemonName(pokemonName);
+            PokemonName();
         }
 
-        public void PokemonName (string pokemonName)                    //Metodo que devuelve el nombre del pokemon y lo muestra en pantalla
+        public string PokemonName ()                    //Metodo que devuelve el nombre del pokemon y lo muestra en pantalla
         {
-            Console.WriteLine(pokemonName + pokemonName + "!");
+            return pokemonName + " " + pokemonName + "!";
         }
 
         //Getters de los argumentos

@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace ProgramacionOrientadaAObjetos
 {
-    public class Squirtle : Polemon
+    public class Darumaka : Polemon
     {
 
-        public Squirtle() : base()
+        public Darumaka() : base()
         {
-            pokemonName = "Squirtle";    //
-            pokemonType = "Agua";
-            healthPoints = 44;
+            pokemonType = "Fuego";
+            pokemonName = "Darumaka";
+            healthPoints = 70;
         }
-        
 
     }
 }
